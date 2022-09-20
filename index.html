@@ -1,34 +1,31 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="C:\Users\79914\Desktop\html\assets\style.css">
         <title>Задание 1</title>
     </head>
     <body>
-        <header class=="header">
-            <div class="header_inner container">
-                <div class="head_logo">
-                    <img src="file:///C:/Users/79914/Desktop/2/image.png" alt=" ">
-                </div> 
-                <div class="header__title">
-                   index.html
-                </div>
-            </div>
+        <header class="header">
+                <div style="width:100%; padding: 10px; height:120px;">
+                   <img style="float:left; margin:10px; width:100px; height:100px;" src="https://dtischencko.github.io/image.png" alt="">
+                
+                    <div style=" padding:50px;">Index.html</div>
+                    </div>  
         </header>
         <nav class="nav container">
             <ul class="nav link">
                 <li>
-                    <a herif="#link">Список</a>
+                    <a href="#link" title="Список">Список</a> 
                 </li>
                 <li>
-                    <a herif="#">Форма</a>
+                    <a href="#form" title="Нумерованный список гиперссылок">Форма</a> 
                 </li>
                 <li>
-                    <a href="#">Подвал</a>
+                    <a href="#footer">Подвал</a>
                 </li>
             </ul>
         </nav>
-    <ol>
 <div class="flex-box container">
     <section class="link" id="link">
         <ol class="link list">
@@ -58,8 +55,15 @@
      <li>
         <ul>
             <li>
-        <a href="#head1" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a> 
+        <a href="#link" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a> 
     </li>
+    <li>
+        <a href="#table" title="Нумерованный список гиперссылок">Таблица</a> 
+    </li>
+    <li>
+        <a href="#form" title="Нумерованный список гиперссылок">Форма</a> 
+    </li>
+
     </ul>   
     <li>
         <a>Ссылка без href</a>
@@ -87,12 +91,12 @@
     <li>
         Ссылка-изображение 
         <br>
-        <a href="https://example.com"><img src="https://cdn.dribbble.com/users/73554/screenshots/2693946/teemo-v2.jpg" width="800" height="600" alt="Точно не картинка"></a> 
+        <a href="https://example.com"><img src="https://cdn.dribbble.com/users/73554/screenshots/2693946/teemo-v2.jpg" width="400" height="300" alt="Точно не картинка"></a> 
     </li>
     <li>
         Ссылки из прямоугольных и круглых областей картинки
         <br>
-<img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-swain-reveal/ru_RU/f4b05129ff4965f7cae70871504158000cbe0fc7/assets/img/content/wallpaper/base-icon.jpg" width="380" height="380" alt="Картинище" usemap="#mymap">
+<img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-swain-reveal/ru_RU/f4b05129ff4965f7cae70871504158000cbe0fc7/assets/img/content/wallpaper/base-icon.jpg" width="190" height="190" alt="Картинище" usemap="#mymap">
 <map name="mymap">
     <area shape="rect" coords="40,25,90,150" href="https://cdn.dribbble.com/users/1903950/screenshots/5416286/comp_8_still_2x.gif?compress=1&resize=400x300" alt="Прямоугольная область">
     <area shape="circle" coords="100,210,25" href="https://cdn.dribbble.com/users/2459019/screenshots/17246156/media/422b9bbd5457efc518d8087112817a84.jpg?compress=1&resize=400x300" alt="Круглая область">
@@ -123,7 +127,7 @@
 
 </ol>
 </section>
-<table class="table">
+<table class="table" id="table">
     <caption>
         Таблица
     </caption>
@@ -136,27 +140,36 @@
         <td colspan="2">Ячейка 11 объединенная с 12</td>
         <td>Ячейка 13</td>
       </tr>
-      <tr>
+      <tr class="tab">
         <td>Ячейка 21</td>
         <td>Ячейка 22</td>
         <td>Ячейка 23</td>
       </tr>
+      <tr class="tab">
+        <td >Ячейка 31</td>
+        <td colspam="2">Ячейка 32 объединённая с 33</td>
+      </tr>
       <tr>
-        <td>Ячейка 21</td>
-        <td colspam="2">Ячейка 22 обЪединённая с 23</td>
+        <td>Ячейка 41</td>
+        <td>Ячейка 42</td>
+        <td>Ячейка 43</td>
+      </tr>
+      <tr class="tab">
+        <td colspam="3">Ячейка 51 объединенная с 52 и 53</td>
+       
       </tr>
     </tbody>
 </table>
-<h2 id="head2">Форма</h2>
+<h2>Форма</h2>
 <form action="https://www.example.com" method="POST"  id="form">          
     <label>
            Имя:<br>
-          <input name="field-name-1" value="Николай" type="name">
+          <input name="field-name-1" placeholder="Николай" type="name">
         </label><br>
        
           <label>
              Email:<br>
-             <input name="field-email" value="nik.gavranek@gmail.com" type="email">
+             <input name="field-email" placeholder="nik.gavranek@gmail.com" type="email">
           </label><br>
              <label>
              Дата рождения:<br>
@@ -175,7 +188,7 @@
               3
           </label>
           <label>
-              <input type="radio" checked="checked" name="radio-group-1" value="4">
+              <input type="radio"  name="radio-group-1" value="4">
               4
           </label>
           <label>
@@ -196,23 +209,21 @@
                    <input type="radio" name="radio-group-1" value="Вертолёт">
                    Вертолёт
                </label>
-               <label>
-                   <input type="radio" checked="checked" name="radio-group-1" value="4">
-                   
-               </label>
         
                </label><br>
                <label>
                    Сверхспособности:<br>
                    <select name="p" multiple="multiple">
-                   <option value="immortality">,Бессмертие</option>
+                   <option value="immortality">Бессмертие</option>
                    <option value="passingthroughwalls">Прохождение сквозь стены</option>
                    <option value="levitation" selected="selected">Левитация</option>
                    </select>
                </label><br>
                <label>
-                   Биография:<br>
-                   <textarea name="bio">Предоставьте личные данные</textarea>
+                 Биография:<br>
+                 <textarea > </textarea>
+                  
+                  
                </label><br>
                С контрактом ознакомлен(а):<br>
                <label>
@@ -221,5 +232,10 @@
                <input type="submit" value="Отправить">
            </form>
 </div>
+<footer class="footer" id="footer">
+    <div class="footer__inner">
+        <span>(c) Николай Гавранек 2022</span>
+    </div>
+</footer>
     </body>
 </html>
