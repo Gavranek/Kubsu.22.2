@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="/Kubsu.22.2/css/style.css">
+        <link rel="stylesheet" href="Kubsu/css/style.css">
         <title>Задание 1</title>
     </head>
     <body>
         <header class="header">
-                <div style="width:100%; padding: 10px; height:120px;">
+                <div style="width:960px; padding: 10px; height:120px; margin: 0 auto;">
                    <img style="float:left; margin:10px; width:100px; height:100px;" src="https://dtischencko.github.io/image.png" alt="">
                 
                     <div style=" padding:50px;">Index.html</div>
@@ -16,13 +16,11 @@
         <nav class="nav container">
             <ul class="nav link">
                 <li>
-                    <a href="#link" title="Список">Список</a> 
-                </li>
-                <li>
-                    <a href="#form" title="Нумерованный список гиперссылок">Форма</a> 
-                </li>
-                <li>
-                    <a href="#footer">Подвал</a>
+                    <p> 
+                        <a href="#link" title="Список">Список  </a>
+                        <a href="#form" title="Нумерованный список гиперссылок">Форма  </a>   
+                        <a href="#footer">Подвал</a>
+                 </p>
                 </li>
             </ul>
         </nav>
@@ -137,26 +135,26 @@
         <th>Колонка 2</th>
         <th>Колонка 3</th>
       </tr>
-      <tr>
+      <tr >
         <td colspan="2" >Ячейка 11 объединенная с 12</td>
         <td>Ячейка 13</td>
       </tr>
-      <tr class="tab">
+      <tr class="tab" >
         <td>Ячейка 21</td>
         <td>Ячейка 22</td>
         <td>Ячейка 23</td>
       </tr>
-      <tr class="tab">
+      <tr class="tab" >
         <td >Ячейка 31</td>
-        <td colspam="2">Ячейка 32 объединённая с 33</td>
+        <td colspan="3">Ячейка 32 объединённая с 33</td>
       </tr>
-      <tr>
+      <tr >
         <td>Ячейка 41</td>
         <td>Ячейка 42</td>
-        <td>Ячейка 43</td>
+        <td rowspan="2">Ячейка 43 в объеднении с 53</td>
       </tr>
       <tr class="tab">
-        <td colspam="3 " >Ячейка 51 объединенная с 52 и 53</td>
+        <td colspan="2" >Ячейка 51 в объединении с 52</td>
       </tr>
     </tbody>
 </table>
