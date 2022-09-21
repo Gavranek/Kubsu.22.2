@@ -1,4 +1,4 @@
-@media screen and (min-width: 960px){
+@media screen and (min-width: 360px){
     *{
         box-sizing: border-box;
     }
@@ -6,6 +6,9 @@
         margin: 0;
 		color:#4B0082;
 		background-color:	#a484f6;
+    }
+   nav{margin: 0;
+        
     }
     ul{
         list-style-type: none;
@@ -21,6 +24,9 @@
     }
     table{
         border-collapse: collapse;
+        width: 100%;
+        margin: 10px auto 10px auto;
+        
     }
     th, td{
         border: 1px solid black;
@@ -47,17 +53,15 @@
     textarea{
         resize: none;
     }
+    header{
+        background-color: rgb(70, 174, 167);
+    }
     .container{
         max-width: 960px;
         width: 100%;
         margin: 0 auto;
     }
-    .header::after{
-        content: "";
-        clear: both;
-        display: block;
-		color:black;
-    }
+   
     tr:nth-child(even){
         background-color: #f41f1f;
     }
@@ -65,5 +69,6 @@
         height: 100px;
         display: flex;
         align-items: center;
+        background-color: rgb(70, 174, 167);
     }
 }
