@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="/web-1-2/css/style.css">
-        <title>Задание 1</title>
+        <title>Задание 1-2</title>
     </head>
     <body>
         <header class="header">
@@ -13,17 +13,13 @@
                     <div style=" padding:50px;">Index.html</div>
                     </div>  
         </header>
-        <nav class="nav container">
-            <ul class="nav link">
-                <li>
-                    <p> 
-                        <a href="#link" title="Список">Список  </a>
-                        <a href="#form" title="Нумерованный список гиперссылок">Форма  </a>   
-                        <a href="#footer">Подвал</a>
-                 </p>
-                </li>
+        <nav class="page-nav">
+            <ul>
+              <li><a href="#list">Список ссылок</a></li>
+              <li><a href="#form">Форма </a></li>
+              <li><a href="#page-table">Таблица</a></li>
             </ul>
-        </nav>
+          </nav>
 <div class="flex-box container">
     <section class="link" id="link">
         <ol class="link list">
@@ -196,27 +192,28 @@
           <br>
                Пол:<br>
                <label>
-                   <input type="radio" name="radio-group-1" value="М">
+                   <input type="radio" name="radio-group-2" value="М">
                    М
                </label>
                <label>
-                   <input type="radio" name="radio-group-1" value="Ж">
+                   <input type="radio" name="radio-group-2" value="Ж">
                    Ж
                </label>
                <label>
-                   <input type="radio" name="radio-group-1" value="Вертолёт">
+                   <input type="radio" name="radio-group-2" value="Вертолёт">
                    Вертолёт
                </label>
         
                </label><br>
                <label>
-                   Сверхспособности:<br>
-                   <select name="p" multiple="multiple">
-                   <option value="immortality">Бессмертие</option>
-                   <option value="passingthroughwalls">Прохождение сквозь стены</option>
-                   <option value="levitation" selected="selected">Левитация</option>
-                   </select>
-               </label><br>
+                Сверхспособности:
+                <br />
+                <select name="field-name[]" multiple="multiple" size="3">
+                  <option value="Значение 1">Бессмертие</option>
+                  <option value="Значение 2">Прохождение сквозь стены</option>
+                  <option value="Значение 3">Левитация</option>
+                </select>
+              </label><br>
                <label>
                  Биография:<br>
                  <textarea > </textarea>
