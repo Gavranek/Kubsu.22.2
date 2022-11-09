@@ -110,11 +110,8 @@ border: 5px solid #000000;
  tr:nth-child(even){
      background-color: #621ff4;
  }
- 
-}
-.footer{
+ .footer{
      background-color: rgb(70, 174, 167);
  } 
-#footer_inner{
- margin: 0 auto;
 }
+
