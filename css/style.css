@@ -115,3 +115,6 @@ border: 5px solid #000000;
 .footer{
      background-color: rgb(70, 174, 167);
  } 
+#footer_inner{
+ margin: 0 auto;
+}
